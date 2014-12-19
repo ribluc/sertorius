@@ -1,0 +1,68 @@
+/***************************************************************************************
+ * (c) Copyright Arretium Technologies Ltd 2011. All rights reserved. No part of this
+ * application may be photocopied, reproduced or translated to another program language
+ * without prior written consent of Arretium Technologies Ltd
+ **************************************************************************************/
+package com.arretium.base.dao;
+
+/***
+ * Exception for Data not found<br>
+ * Used when a record, object or entry is not found<br>
+ * <br>
+ *
+ * @author caesar
+ * @version 1.0
+ */
+public class DataNotFoundException extends DAOException {
+
+    private static final long serialVersionUID = 5347482879037428221L;
+
+    /*** Identifier to the data not found */
+    private String dataNotFound;
+
+
+    public DataNotFoundException() {
+        super();
+    }
+
+    public DataNotFoundException(final String msg) {
+        super(msg);
+    }
+
+    public DataNotFoundException(final String message, final String dataNotFound) {
+        super(message);
+        this.dataNotFound = dataNotFound;
+    }
+
+    public DataNotFoundException(final Throwable throwable) {
+        super(throwable);
+    }
+
+    public DataNotFoundException(final String message, final Throwable throwable) {
+        super(message, throwable);
+    }
+
+    public DataNotFoundException(final String message, final String dataNotFound, final Throwable throwable) {
+        super(message, throwable);
+        this.dataNotFound = dataNotFound;
+    }
+
+
+    /***
+     * Returns the data not found. Can be a record, object or entry<br>
+     * <br>
+     *
+     * @return The data not found identifier
+     * @since 1.0
+     */
+    public final String getDataNotFound() {
+        if(this.dataNotFound == null) {
+            return "";
+        }
+        return this.dataNotFound;
+    }
+
+    public final void setDataNotFound(final String dataNotFound) {
+        this.dataNotFound = dataNotFound;
+    }
+}

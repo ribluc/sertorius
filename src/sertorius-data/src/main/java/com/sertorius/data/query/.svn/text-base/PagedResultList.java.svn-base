@@ -1,0 +1,74 @@
+/***************************************************************************************
+ * (c) Copyright Arretium Technologies Ltd 2011. All rights reserved. No part of this
+ * application may be photocopied, reproduced or translated to another program language
+ * without prior written consent of Arretium Technologies Ltd
+ **************************************************************************************/
+package com.arretium.base.query;
+
+import com.arretium.base.domain.IEntity;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+
+/***
+ * Paged Query result representation<br>
+ * <br>
+ *
+ * @param <E> An <code>IEntity</code> implementation
+ * @author caesar
+ * @version 1.0
+ */
+public class PagedResultList<E extends IEntity> implements QueryResult {
+
+    private static final long serialVersionUID = -5090425751708453669L;
+
+    private List<E> results;
+    private int numOfResults;
+
+    /***
+     * Constructor for <code>PagedResultList</code>.<br>
+     *
+     * @param count The total of results found
+     * @param results The result list
+     * @since 1.0
+     */
+    public PagedResultList(final int count, final List<E> results) {
+        if (count <= 0 || results == null || results.isEmpty()) {
+            this.results = new ArrayList<E>();
+        }
+        else {
+            this.numOfResults = count;
+            this.results = results;
+        }
+    }
+
+    @Override
+    public int count() {
+        return this.numOfResults;
+    }
+
+    /***
+     * Returns the result list<br>
+     * <br>
+     *
+     * @return the result list
+     * @since 1.0
+     */
+    public List<E> getResults() {
+        return this.results;
+    }
+
+    /***
+     * Sort the result list by the given comparator<br>
+     * <br>
+     *
+     * @param comparator A valid <code>Comparator</code>
+     * @since 1.0
+     */
+    public void order(final Comparator<E> comparator) {
+        Collections.sort(this.results, comparator);
+    }
+}

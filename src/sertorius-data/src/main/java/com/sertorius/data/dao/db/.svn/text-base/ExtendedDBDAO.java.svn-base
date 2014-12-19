@@ -1,0 +1,28 @@
+/***************************************************************************************
+ * (c) Copyright Arretium Technologies Ltd 2011. All rights reserved. No part of this
+ * application may be photocopied, reproduced or translated to another program language
+ * without prior written consent of Arretium Technologies Ltd
+ **************************************************************************************/
+package com.arretium.base.dao.db;
+
+import com.arretium.base.dao.DAOException;
+import com.arretium.base.domain.IEntity;
+
+import java.sql.Connection;
+import java.util.Collection;
+
+
+/***
+ * Extended DB DAO interface<br>
+ * <br>
+ *
+ * @param <E> An <code>IEntity</code> implementation
+ * @author caesar
+ * @version 1.0
+ */
+public interface ExtendedDBDAO<E extends IEntity> extends DBDAO<E> {
+
+    public int count(Connection conn) throws DAOException;
+
+    public Collection<E> retrieveCollection(Connection conn, E e) throws DAOException;
+}

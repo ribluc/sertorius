@@ -1,0 +1,21 @@
+/***************************************************************************************
+ * (c) Copyright Arretium Technologies Ltd 2011. All rights reserved. No part of this
+ * application may be photocopied, reproduced or translated to another program language
+ * without prior written consent of Arretium Technologies Ltd
+ **************************************************************************************/
+package com.arretium.base.dao.db;
+
+import com.arretium.base.dao.DAO;
+import com.arretium.base.domain.IEntity;
+
+/***
+ * Generic DB DAO Interface<br>
+ * <br>
+ *
+ * @param <E> An <code>IEntity</code> implementation
+ * @author caesar
+ * @version 1.0
+ */
+public interface DBDAO<E extends IEntity> extends DAO {
+    // DB DAO Interface
+}

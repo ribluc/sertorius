@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arretium-base/!svn/ver/9/trunk/src/arretium-base/src/main/java/com/arretium/base/dao
+END
+DAOException.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/arretium-base/!svn/ver/4/trunk/src/arretium-base/src/main/java/com/arretium/base/dao/DAOException.java
+END
+DAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/arretium-base/!svn/ver/5/trunk/src/arretium-base/src/main/java/com/arretium/base/dao/DAO.java
+END
+DataNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/arretium-base/!svn/ver/9/trunk/src/arretium-base/src/main/java/com/arretium/base/dao/DataNotFoundException.java
+END

@@ -1,0 +1,28 @@
+/***************************************************************************************
+ * (c) Copyright Arretium Technologies Ltd 2011. All rights reserved. No part of this
+ * application may be photocopied, reproduced or translated to another program language
+ * without prior written consent of Arretium Technologies Ltd
+ **************************************************************************************/
+package com.arretium.base.query;
+
+import java.io.Serializable;
+
+
+/***
+ * Query Result basic Interface<br>
+ * <br>
+ *
+ * @author caesar
+ * @version 1.0
+ */
+public abstract interface QueryResult extends Serializable {
+
+    /***
+     * Returns the total of results<br>
+     * <br>
+     *
+     * @return The total of results found
+     * @since 1.0
+     */
+    public abstract int count();
+}

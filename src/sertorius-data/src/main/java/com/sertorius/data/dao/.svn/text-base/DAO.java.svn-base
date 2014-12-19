@@ -1,0 +1,17 @@
+/***************************************************************************************
+ * (c) Copyright Arretium Technologies Ltd 2011. All rights reserved. No part of this
+ * application may be photocopied, reproduced or translated to another program language
+ * without prior written consent of Arretium Technologies Ltd
+ **************************************************************************************/
+package com.arretium.base.dao;
+
+/***
+ * Simplest DAO Interface<br>
+ * <br>
+ *
+ * @author caesar
+ * @version 1.0
+ */
+public interface DAO {
+    // DAO Interface
+}

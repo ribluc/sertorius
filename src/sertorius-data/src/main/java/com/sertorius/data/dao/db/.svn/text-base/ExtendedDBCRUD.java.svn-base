@@ -1,0 +1,27 @@
+/***************************************************************************************
+ * (c) Copyright Arretium Technologies Ltd 2011. All rights reserved. No part of this
+ * application may be photocopied, reproduced or translated to another program language
+ * without prior written consent of Arretium Technologies Ltd
+ **************************************************************************************/
+package com.arretium.base.dao.db;
+
+import com.arretium.base.dao.DAOException;
+import com.arretium.base.domain.IEntity;
+
+import java.sql.Connection;
+
+/***
+ * Extended DB CRUD interface with check methods<br>
+ * <br>
+ *
+ * @param <E> An <code>IEntity</code> implementation
+ * @see <code>IEntity</code>
+ * @author caesar
+ * @version 1.0
+ */
+public interface ExtendedDBCRUD<E extends IEntity> extends DBCRUD<E> {
+
+    public boolean contains(Connection connection, E entity) throws DAOException;
+
+    public boolean canUpdate(Connection connection, E entity) throws DAOException;
+}

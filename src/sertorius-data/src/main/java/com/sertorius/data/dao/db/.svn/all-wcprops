@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/arretium-base/!svn/ver/4/trunk/src/arretium-base/src/main/java/com/arretium/base/dao/db
+END
+DBCRUD.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arretium-base/!svn/ver/4/trunk/src/arretium-base/src/main/java/com/arretium/base/dao/db/DBCRUD.java
+END
+ExtendedDBCRUD.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/arretium-base/!svn/ver/4/trunk/src/arretium-base/src/main/java/com/arretium/base/dao/db/ExtendedDBCRUD.java
+END
+DBDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/arretium-base/!svn/ver/4/trunk/src/arretium-base/src/main/java/com/arretium/base/dao/db/DBDAO.java
+END
+ExtendedDBDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/arretium-base/!svn/ver/4/trunk/src/arretium-base/src/main/java/com/arretium/base/dao/db/ExtendedDBDAO.java
+END

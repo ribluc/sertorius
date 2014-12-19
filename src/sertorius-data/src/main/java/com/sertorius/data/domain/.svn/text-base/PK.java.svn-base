@@ -1,0 +1,39 @@
+/***************************************************************************************
+ * (c) Copyright Arretium Technologies Ltd 2011. All rights reserved. No part of this
+ * application may be photocopied, reproduced or translated to another program language
+ * without prior written consent of Arretium Technologies Ltd
+ **************************************************************************************/
+package com.arretium.base.domain;
+
+import java.io.Serializable;
+
+/***
+ * TODO comment<br>
+ * <br>
+ *
+ * @author caesar
+ * @version 1.0
+ */
+public abstract class PK implements Serializable {
+
+    /*** */
+    private static final long serialVersionUID = -3031723886335982370L;
+
+    /***
+     * TODO comment<br>
+     * <br>
+     *
+     * @return
+     * @since 1.0
+     */
+    public abstract Long getLongValue();
+
+    /***
+     * TODO comment<br>
+     * <br>
+     *
+     * @return
+     * @since TODO "insert version"
+     */
+    public abstract String getKind();
+}

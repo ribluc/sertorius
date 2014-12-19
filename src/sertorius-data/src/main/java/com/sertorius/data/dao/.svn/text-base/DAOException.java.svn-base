@@ -1,0 +1,35 @@
+/***************************************************************************************
+ * (c) Copyright Arretium Technologies Ltd 2011. All rights reserved. No part of this
+ * application may be photocopied, reproduced or translated to another program language
+ * without prior written consent of Arretium Technologies Ltd
+ **************************************************************************************/
+package com.arretium.base.dao;
+
+/***
+ * Generic DAO Exception<br>
+ * <br>
+ *
+ * @author caesar
+ * @version 1.0
+ */
+public class DAOException extends Exception {
+
+    private static final long serialVersionUID = -3832071547718834279L;
+
+
+    public DAOException() {
+        super();
+    }
+
+    public DAOException(final String message) {
+        super(message);
+    }
+
+    public DAOException(final Throwable throwable) {
+        super(throwable);
+    }
+
+    public DAOException(final String message, final Throwable throwable) {
+        super(message, throwable);
+    }
+}
